@@ -1,4 +1,6 @@
-<?php include_once 'header.php'; ?>
+<?php
+include_once 'header.php';
+?>
 <h1>Kontakt</h1>
 <img src="budova.jpg"/>
 <ul>
@@ -36,4 +38,6 @@
       <td>zavřeno</td>
   </tr>
 </table>
-<?php include_once 'footer.php'; ?>
+<?php
+include_once 'footer.php';
+?>

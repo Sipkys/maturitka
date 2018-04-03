@@ -1,7 +1,7 @@
 <?php
 include_once 'header.php';
-include_once 'db.php';
-
+$path = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'db.php';
+include_once $path;
 $query = "SELECT * FROM authors";
 $result = mysqli_query($connection, $query);
 ?>
@@ -9,6 +9,7 @@ $result = mysqli_query($connection, $query);
   <tr>
     <th>Číslo</th>
     <th>Jméno</th>
+    <th>Upravit</th>
   </tr>
   <?php
 while ($row = mysqli_fetch_assoc($result)) {
@@ -16,6 +17,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     <tr>
       <td><?php echo $row["id_author"]; ?></td>
       <td><?php echo $row["author_name"]; ?></td>
+      <td><a href="addAuthor.php">Upravit</a></td>
     </tr>
 <?php
 }
@@ -23,3 +25,4 @@ while ($row = mysqli_fetch_assoc($result)) {
 </table>
 <?php
 include_once 'footer.php';
+?>

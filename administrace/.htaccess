@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^autor/new ./formAuthor.php [L,QSA]
+RewriteRule ^autor/(.*)$ ./formAuthor.php?id_autora=$1 [L,QSA]
+RewriteRule ^genres/new ./formGenres.php [L,QSA]
+RewriteRule ^genres/(.*)$ ./formGenres.php?id_genru=$1 [L,QSA]
+RewriteRule ^book/new ./formBook.php [L,QSA]
+RewriteRule ^book/(.*)$ ./formBook.php?id_book=$1 [L,QSA]
