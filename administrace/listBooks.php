@@ -34,6 +34,9 @@ while ($row = mysqli_fetch_assoc($result)) {
 <?php
 }
 ?>
+  <tr>
+    <td><a href="http://localhost/maturita-1/administrace/book/new">Přidat</a></td>
+  </tr>
 </table>
 <?php
 include_once 'footer.php';

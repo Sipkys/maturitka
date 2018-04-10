@@ -17,11 +17,14 @@ while ($row = mysqli_fetch_assoc($result)) {
     <tr>
       <td><?php echo $row["id_genre"]; ?></td>
       <td><?php echo $row["genres_name"]; ?></td>
-      <td><a href="addGenres.php">Upravit</a></td>
+      <td><a href="http://localhost/maturita-1/administrace/genres/<?php echo $row["id_genre"] ?>">Upravit</a></td>
     </tr>
 <?php
 }
 ?>
+<tr>
+  <td><a href="http://localhost/maturita-1/administrace/genres/new">Přidat</a></td>
+</tr>
 </table>
 <?php
 include_once 'footer.php';
